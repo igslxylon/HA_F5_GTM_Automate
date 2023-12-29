@@ -2,7 +2,7 @@
 ## Overview
 The program will perform below tasks
 1. Read GTM Excel, defualt `ltm-gtm-template.xlsx` and Output to several Ansible Variables YML file.
-   Input: Excel File, default `REL_PATH_INPUT_Excel_File = ltm-gtm-template.xlsx`
+   Input: An Excel file path in 1st parameters
    Output: YML Files under Output Folder, default `REL_PATH_OUTPUT_DIR = './output'`
 2. Commit the Output YML Files for related `<tsr_no>` to Github
 ## Python Version
