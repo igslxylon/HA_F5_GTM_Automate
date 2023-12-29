@@ -14,28 +14,27 @@ pip install pyyaml
 pip install PyGithub
 pip install ruamel.yaml
 ```
-3. Select or Setup and init a Github repository, `{RepositoryName}`
-4. Generate a Github token, `{Token}`
-5. Revise paramters in `config/GTMConfig.py`, replace the {RepositoryName}, {Token}
+3. Select or Setup and init a Github repository, `{GITHUB_REPOSITORY_NAME}` and create a Branch, `{GITHUB_BRANCH_NAME}`
+4. Generate a Github token, `{GITHUB_TOKEN}`
+5. Revise paramters in `config/GTMConfig.py`, replace the {GITHUB_REPOSITORY_NAME}, {GITHUB_TOKEN}
 ```
 REL_PATH_ServiceDCMapping = 'config/Service_DC_Mapping.csv'
-REL_PATH_INPUT_Excel_File = 'ltm-gtm-template.xlsx'
 REL_PATH_OUTPUT_DIR = './output'
 GITHUB_REPOSITORY_NAME = '{RepositoryName}'
 GITHUB_TOKEN = '{Token}'
+GITHUB_BASE_URL = 'https://hagithub.home/api/v3'
 ...
-GTM_DEVICE_LIST_PRD = ['dc6-cloud-gtm01','dc7-cloud-gtm01','dc8-cloud-gtm01']
-GTM_DEVICE_LIST_TST = ['hkch-cloudnp-gtm01','dc7-cloudnp-gtm01']
+GITHUB_BRANCH_NAME = {GITHUB_BRANCH_NAME}
 ...
 ```
 6. Execute Script
 ```
 cd {project_home}
-python ./GTMTaskAutomate.py
+python ./GTMTaskAutomate.py gtm-template_nonprd.xlsx
 ```
 Sample Result
 ```
-> python .\GTMTaskAutomate.py
+> python .\GTMTaskAutomate.py gtm-template_nonprd.xlsx
 2023-12-22 16:46:31 - root - INFO - No Duplicates FQDN
 2023-12-22 16:46:31 - root - INFO - Completed Manupulate Fields for record 0
 ...
@@ -56,17 +55,17 @@ Sample Result
     ├── Service_DC_Mapping.csv              # File, CSV storing the Serivce, Server Info and Data Center Mapping
     └── ...         
 ├── output                                  # Destination Folder for Output Ansible variables yml files
-    └── <tsr_no>                            # List of Folders, naming with <tsr_no>, e.g. 'RID-00001', 'RID-00002'
-        └── <device_hostname>               # List of Folders, naming with <device_hostname>, which depends on the Environment, either 'tst' or 'prd'
-                                            #  e.g. 'dc6-cloud-gtm01','dc7-cloud-gtm01','dc8-cloud-gtm01'
+    └── <tsr_no>                            # List of Folders, naming with <Env>, <tst|prd>
+        └── <tsr_no>                        # List of Folders, naming with <tsr_no>, e.g. 'RID-00001', 'RID-00002'
             └── <service_type>+<wideip>.yml # Output YML file, with pattern <service_type>+<wideip>.yml, e.g. 'nonwebservice+aiops-chatops-redis-aiops-corp-chatops-sit.tstcld1.ha.org.hk.yml'
 ├── service                                 # Service Folder for Service module storing Ansible Variable Patterns
 ├── template                                # Template Folder for YML Template of Ansible Variable
 ├── util                                    # Folder for Python module, util
-├── ltm-gtm-template.xlsx                   # File, The GTM Excel File provided by User
+├── gtm-template_nonprd.xlsx            # Template File, The GTM Excel File provided by User
+├── <anyname>_<tst|prd>.xlsx                # Import Excel, with naming including env <tst|prd>
 ├── GTMTaskAutomate.py                      # File, Main Python File to start the program
 ├── app.log                                 # Log File
-├── GTM_Audit.log                           # Audit Log
+├── GTM_Audit.csv                           # Audit CSV
 └── README.md
 ```
 
@@ -81,8 +80,7 @@ wideip = 'aiops-chatops-redis-aiops-corp-chatops-sit.tstcld1.ha.org.hk'
 ```
 The Output Files with default are
 ```
-./output/RID_00001/hkch-cloudnp-gtm01/nonwebservice+aiops-chatops-redis-aiops-corp-chatops-sit.tstcld1.ha.org.hk.yml
-./output/RID_00001/dc7-cloudnp-gtm01/nonwebservice+aiops-chatops-redis-aiops-corp-chatops-sit.tstcld1.ha.org.hk.yml
+./output/tst/RID_00001/nonwebservice+aiops-chatops-redis-aiops-corp-chatops-sit.tstcld1.ha.org.hk.yml
 ```
 
 
