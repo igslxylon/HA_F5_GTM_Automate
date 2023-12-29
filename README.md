@@ -1,4 +1,4 @@
-# Project HA_LTMGTMAutomate
+# Project HA_GTMAutomate
 ## Overview
 The program will perform below tasks
 1. Read GTM Excel, defualt `ltm-gtm-template.xlsx` and Output to several Ansible Variables YML file.
