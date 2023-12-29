@@ -60,13 +60,13 @@ Sample Result
     ├── Service_DC_Mapping.csv              # File, CSV storing the Serivce, Server Info and Data Center Mapping
     └── ...         
 ├── output                                  # Destination Folder for Output Ansible variables yml files
-    └── <env>                            # List of Folders, naming with <Env>, <tst|prd>
+    └── <env>                               # List of Folders, naming with <Env>, <tst|prd>
         └── <tsr_no>                        # List of Folders, naming with <tsr_no>, e.g. 'RID-00001', 'RID-00002'
             └── <service_type>+<wideip>.yml # Output YML file, with pattern <service_type>+<wideip>.yml, e.g. 'nonwebservice+aiops-chatops-redis-aiops-corp-chatops-sit.tstcld1.ha.org.hk.yml'
 ├── service                                 # Service Folder for Service module storing Ansible Variable Patterns
 ├── template                                # Template Folder for YML Template of Ansible Variable
 ├── util                                    # Folder for Python module, util
-├── gtm-template_nonprd.xlsx            # Template File, The GTM Excel File provided by User
+├── gtm-template_nonprd.xlsx                # Template File, The GTM Excel File provided by User
 ├── <anyname>_<tst|prd>.xlsx                # Import Excel, with naming including env <tst|prd>
 ├── GTMTaskAutomate.py                      # File, Main Python File to start the program
 ├── app.log                                 # Log File
