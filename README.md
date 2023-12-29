@@ -24,7 +24,7 @@ pip install ruamel.yaml
 REL_PATH_ServiceDCMapping = 'config/Service_DC_Mapping.csv'
 REL_PATH_OUTPUT_DIR = './output'
 GITHUB_REPOSITORY_NAME = '{RepositoryName}'
-GITHUB_TOKEN = '{Token}'
+GITHUB_TOKEN = '{GITHUB_TOKEN}'
 GITHUB_BASE_URL = 'https://hagithub.home/api/v3'
 ...
 GITHUB_BRANCH_NAME = {GITHUB_BRANCH_NAME}
