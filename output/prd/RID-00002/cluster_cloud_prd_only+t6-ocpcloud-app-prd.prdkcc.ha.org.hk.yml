@@ -1,7 +1,7 @@
 tsr_no: RID-00002
 fqdn: t6-ocpcloud-app-prd.prdkcc.ha.org.hk
 service_type: cluster_cloud_prd_only
-monitor_name: monHttp_t6-ocpcloud-app-prd_kcc
+monitor_name: monHttp_t6-ocpcloud-app-prd_kcc_ClusterCloud
 monitor_port: 443
 monitor_host: t6-ocpcloud-app-prd.prdkcc.ha.org.hk
 monitor_uri: /healthcheck
