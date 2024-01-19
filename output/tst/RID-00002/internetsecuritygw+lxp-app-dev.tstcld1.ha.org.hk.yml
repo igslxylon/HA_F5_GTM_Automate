@@ -2,7 +2,7 @@ tsr_no: RID-00002
 fqdn: lxp-app-dev.tstcld1.ha.org.hk
 service_type: internetsecuritygw
 monitor_name: monHttp_lxp-app-dev_OCP4
-monitor_port: 443
+monitor_port: 8080
 monitor_host: lxp-app-dev.tstcld1.ha.org.hk
 monitor_uri: /status/healthcheck
 lb_mode: round-robin

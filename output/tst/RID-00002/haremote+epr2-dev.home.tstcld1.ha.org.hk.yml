@@ -2,7 +2,7 @@ tsr_no: RID-00002
 fqdn: epr2-dev.home.tstcld1.ha.org.hk
 service_type: haremote
 monitor_name: monHttp_epr2-dev_OCP4
-monitor_port: 443
+monitor_port: 8080
 monitor_host: epr2-dev.home.tstcld1.ha.org.hk
 monitor_uri: /healthcheck
 lb_mode: round-robin
