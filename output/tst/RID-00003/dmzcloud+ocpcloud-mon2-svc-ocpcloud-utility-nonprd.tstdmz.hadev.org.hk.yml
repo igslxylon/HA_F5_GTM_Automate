@@ -2,7 +2,7 @@ tsr_no: RID-00003
 fqdn: ocpcloud-mon2-svc-ocpcloud-utility-nonprd.tstdmz.hadev.org.hk
 service_type: dmzcloud
 monitor_name: monHttps_ocpcloud-mon2-svc-ocpcloud-utility-nonprd_hadev_OCP4
-monitor_port: '443'
+monitor_port: 443
 monitor_host: ocpcloud-mon2-svc-ocpcloud-utility-nonprd.tstdmz.hadev.org.hk
 monitor_uri: /healthcheck
 lb_mode: round-robin
@@ -12,8 +12,8 @@ pool1_1_poolname: pool_ocpcloud-mon2-svc-ocpcloud-utility-nonprd_OCP4_dmzDC6f_ha
 pool1_1_server_name: srv_tstdmz1_ocpcloud-mon2-svc-ocpcloud-utility-nonprd_hadev
 pool1_1_vs_name: srv_tstdmz1_ocpcloud-mon2-svc-ocpcloud-utility-nonprd_hadev_443
 pool1_1_vs_ip: 192.x.x.2
-pool1_1_vs_port: '443'
+pool1_1_vs_port: 443
 pool1_1_data_center: dc_dmzDC6f
 pool2_1_vs_port: ''
-number_of_pools_in_wideip: '1'
-number_of_servers_in_pool: '1'
+number_of_pools_in_wideip: 1
+number_of_servers_in_pool: 1
