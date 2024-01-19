@@ -2,7 +2,7 @@ tsr_no: RID-00002
 fqdn: t6-ocpcloud-app-prd.prdkcc.ha.org.hk
 service_type: cluster_cloud_prd_only
 monitor_name: monHttp_t6-ocpcloud-app-prd_kcc_ClusterCloud
-monitor_port: '443'
+monitor_port: 443
 monitor_host: t6-ocpcloud-app-prd.prdkcc.ha.org.hk
 monitor_uri: /healthcheck
 lb_mode: round-robin
@@ -11,10 +11,10 @@ failovermethod: Auto
 pool1_1_poolname: pool_t6-ocpcloud-app-prd_QEH_ClusterCloud
 pool1_1_server_name: srv_prdqeh_cluster
 pool1_1_vs_name: srv_prdqeh_cluster_443
-pool1_1_vs_port: '443'
+pool1_1_vs_port: 443
 pool2_1_poolname: pool_t6-ocpcloud-app-prd_KWH_ClusterCloud
 pool2_1_server_name: srv_prdkwh_cluster
 pool2_1_vs_name: srv_prdkwh_cluster_443
-pool2_1_vs_port: '443'
-number_of_pools_in_wideip: '2'
-number_of_servers_in_pool: '1'
+pool2_1_vs_port: 443
+number_of_pools_in_wideip: 2
+number_of_servers_in_pool: 1
