@@ -2,7 +2,7 @@ tsr_no: RID-00002
 fqdn: lxp-app-sit.tstcld1.ha.org.hk
 service_type: internetsecuritygw
 monitor_name: monHttp_lxp-app-sit_OCP4
-monitor_port: 8080
+monitor_port: '8080'
 monitor_host: lxp-app-sit.tstcld1.ha.org.hk
 monitor_uri: /status/healthcheck
 lb_mode: round-robin
@@ -12,13 +12,13 @@ pool1_1_poolname: pool_lxp-app-sit_OCP4_HKCH
 pool1_1_server_name: srv_tstcldhome61_lxp-app-sit
 pool1_1_vs_name: srv_tstcldhome61_lxp-app-sit_443
 pool1_1_vs_ip: 160.x.x.4
-pool1_1_vs_port: 443
+pool1_1_vs_port: '443'
 pool1_1_data_center: dc_HKCH
 pool2_1_poolname: pool_lxp-app-sit_OCP4_DC7
 pool2_1_server_name: srv_tstcldhome62_lxp-app-sit
 pool2_1_vs_name: srv_tstcldhome62_lxp-app-sit_443
 pool2_1_vs_ip: 160.x.x.5
-pool2_1_vs_port: 443
+pool2_1_vs_port: '443'
 pool2_1_data_center: dc_DC7
-number_of_pools_in_wideip: 2
-number_of_servers_in_pool: 1
+number_of_pools_in_wideip: '2'
+number_of_servers_in_pool: '1'

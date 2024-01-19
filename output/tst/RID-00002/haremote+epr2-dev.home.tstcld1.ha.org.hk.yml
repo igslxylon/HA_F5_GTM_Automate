@@ -2,7 +2,7 @@ tsr_no: RID-00002
 fqdn: epr2-dev.home.tstcld1.ha.org.hk
 service_type: haremote
 monitor_name: monHttp_epr2-dev_OCP4
-monitor_port: 8080
+monitor_port: '8080'
 monitor_host: epr2-dev.home.tstcld1.ha.org.hk
 monitor_uri: /healthcheck
 lb_mode: round-robin
@@ -12,7 +12,8 @@ pool1_1_poolname: pool_epr2-dev_OCP4_HKCH_home
 pool1_1_server_name: srv_tstcldhome61_epr2-dev
 pool1_1_vs_name: srv_tstcldhome61_epr2-dev_443
 pool1_1_vs_ip: 160.x.x.3
-pool1_1_vs_port: 443
+pool1_1_vs_port: '443'
 pool1_1_data_center: dc_HKCH
-number_of_pools_in_wideip: 1
-number_of_servers_in_pool: 1
+pool2_1_vs_port: ''
+number_of_pools_in_wideip: '1'
+number_of_servers_in_pool: '1'

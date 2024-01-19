@@ -8,6 +8,7 @@ pool1_1_poolname: pool_aiops-chatops-redis-aiops-corp-chatops-lpt_HKCH_hadev
 pool1_1_server_name: srv_tstcld61_hadev_nonhttp
 pool1_1_vs_name: srv_tstcld61_hadev_30021
 pool1_1_vs_ip: 160.200.147.89
-pool1_1_vs_port: 30021
-number_of_pools_in_wideip: 1
-number_of_servers_in_pool: 1
+pool1_1_vs_port: '30021'
+pool2_1_vs_port: ''
+number_of_pools_in_wideip: '1'
+number_of_servers_in_pool: '1'
