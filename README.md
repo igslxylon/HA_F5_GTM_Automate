@@ -8,6 +8,7 @@ The program will perform below tasks
 ## Python Version
 `3.12`
 ## Tested Python Module Version
+```
 Package            Version
 ------------------ ------------
 numpy              1.26.2
@@ -23,6 +24,7 @@ ruamel.yaml        0.18.5
 ruamel.yaml.clib   0.2.8
 six                1.16.0
 urllib3            2.1.0
+```
 
 ## Quick Start
 1. Clone the project .zip file and extract to a folder, `{project_home}`
