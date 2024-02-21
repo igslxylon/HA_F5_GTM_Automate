@@ -22,14 +22,14 @@ pip install ruamel.yaml
 5. Revise paramters in `config/GTMConfig.py`, replace the {GITHUB_REPOSITORY_NAME}, {GITHUB_TOKEN}
 ```
 REL_PATH_ServiceDCMapping = 'config/Service_DC_Mapping.csv'
+REL_PATH_CRPRDDomainHospitalMapping = 'config/Cluster_Cloud_Domain_Hospital_Mapping.csv'
 REL_PATH_OUTPUT_DIR = './output'
-REL_PATH_OUTPUT_AUDIT_FILE = 'GTM_Audit.csv'
-REL_PATH_SSL_CERT_DIR = './ssl_cert'
+REL_PATH_OUTPUT_AUDIT_FILE_PREFIX = 'GTM_Audit'
+...
 GITHUB_REPOSITORY_NAME = '{RepositoryName}'
 GITHUB_TOKEN = '{GITHUB_TOKEN}'
 GITHUB_BASE_URL = 'https://hagithub.home/api/v3'
-...
-GITHUB_BRANCH_NAME = {GITHUB_BRANCH_NAME}
+GITHUB_BRANCH_NAME = 'main' #{GITHUB_BRANCH_NAME}
 ...
 ```
 6. Execute Script
