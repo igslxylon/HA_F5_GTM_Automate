@@ -7,7 +7,7 @@ The program will perform below tasks
 2. Commit the Output YML Files for related `<tsr_no>` to Github
 ## Python Version
 `3.12`
-## Tested Python Module Version
+## Tested Python Package Version
 ```
 Package            Version
 ------------------ ------------
