@@ -70,7 +70,8 @@ Sample Result
 ├── <anyname>_<tst|prd>.xlsx                # Import Excel, with naming including env <tst|prd>
 ├── GTMTaskAutomate.py                      # File, Main Python File to start the program
 ├── app.log                                 # Log File
-├── GTM_Audit.csv                           # Audit CSV
+├── GTM_Audit_nonprd.csv                    # Audit CSV for GTM non-production
+├── GTM_Audit_prd.csv                       # Audit CSV for GTM production
 └── README.md
 ```
 
